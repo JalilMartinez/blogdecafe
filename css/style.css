@@ -29,8 +29,9 @@ body{
 a{
     text-decoration: none;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
 }
 h1{
     font-size: 4.8rem;
@@ -43,6 +44,7 @@ h3{
 }
 h4{
     font-size: 2.8rem;
+    
 }
 .imagen{
     max-width: 100%;
@@ -134,9 +136,33 @@ h4{
 @media (min-width:768px) {
     .boton{
         display: inline-block;/*si le pone puro inline no le hace caso a los margin ni al width*/
-        
+
     }
 }
 .boton--primario{
     background-color: var(--negro);
+}
+.boton--secundario{
+    background-color: var(--primario);
+}
+.cursos{
+    list-style: none;
+}
+.widget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: 800;
+    font-size: 2rem;
+}
+.widget-curso__info{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+    
+}
+.widget-curso:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0%;
 }
