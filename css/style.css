@@ -2,6 +2,7 @@
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParrafos: 'Open Sans', sans-serif;
     --primario: #784D3C;
+    --gris: #e1e1e1; 
     --blanco: #ffffff;
     --negro: #000000;
 }
@@ -110,4 +111,32 @@ h4{
         grid-template-columns: 2fr 1fr;
         column-gap: 2rem;
     }
+}
+.entrada{
+    border-bottom: .3rem solid var(--gris) ;
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0%;
+}
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    text-align: center;
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+@media (min-width:768px) {
+    .boton{
+        display: inline-block;/*si le pone puro inline no le hace caso a los margin ni al width*/
+        
+    }
+}
+.boton--primario{
+    background-color: var(--negro);
 }
