@@ -152,12 +152,12 @@ h4{
 .cursos{
     list-style: none;
 }
-.widget-curso__label{
+.widget-curso__label, .curso__label{
     font-family: var(--fuenteHeading);
     font-weight: 800;
     font-size: 2rem;
 }
-.widget-curso__info{
+.widget-curso__info, .curso__texto{
     font-weight: 400;
     font-size: 2rem;
 }
@@ -182,9 +182,7 @@ h4{
         gap: 2rem;
         /*justify-content: space-between; si no sirve con gap*/
     }
-    .img{
-        max-width: 100%;
-    }
+    
     .sobre-nosotros__texto{
         flex: 0 0 calc(50% - 1rem);
     }
@@ -201,4 +199,20 @@ h4{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     } */
+}
+
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width:768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    
+}
+.curso:last-of-type {
+    border: none;
 }
