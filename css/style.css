@@ -22,9 +22,9 @@ body{
 /*gobales*/
 
 .contenedor{
-   
-    
-    width: min(90%, 120rem);/*aplica valor de esos dos que sea menor*/
+    max-width: 120rem;
+    width: 90%;
+    width: min(90%, 120rem);/*aplica valor de esos dos que sea menor*//*reemplaza las dos lineas anteriores*/
     margin: 0 auto;
 }
 a{
@@ -174,4 +174,31 @@ h4{
     background-color: var(--negro);
     padding-bottom: 3rem;
     margin-top: 4rem;
+}
+/*sobre nosotros*/
+@media (min-width:768px) {
+    .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+        /*justify-content: space-between; si no sirve con gap*/
+    }
+    .img{
+        max-width: 100%;
+    }
+    .sobre-nosotros__texto{
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .sobre-nosotros__imagen{
+        flex: 0 0 calc(50% - 1rem);
+    }
+    /*.sobre-nosotros__imagen,        las dos lineas de arriba pero solo para uin 50-50 
+    .sobre-nosotros__texto{
+        flex-basis: 50%; width cuando se tiene flexbox
+        flex-basis: calc(50% - 1rem); si no sirve con gap
+    }*/
+    /*.sobre-1nosotros{  **lo de arriba pero con grid**
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    } */
 }
