@@ -136,12 +136,16 @@ h4{
     text-transform: uppercase;
     font-weight: 900;
     margin-bottom: 2rem;
+    border: none;/*para que aparezca de nuevo la mano en el boton*/
 }
 @media (min-width:768px) {
     .boton{
         display: inline-block;/*si le pone puro inline no le hace caso a los margin ni al width*/
 
     }
+}
+.boton:hover{
+    cursor: pointer;/*para que aparezca de nuevo la mano en el boton*/
 }
 .boton--primario{
     background-color: var(--negro);
@@ -223,3 +227,26 @@ h4{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo{
+    display: flex;
+    margin-top: 2rem;
+  
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea{
+    height: 20rem;
+} 
